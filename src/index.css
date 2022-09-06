@@ -1,0 +1,69 @@
+@font-face {
+  font-family: cursedTimer;
+  src: url(font/CursedTimerULiL.ttf);
+}
+@font-face {
+  font-family: poppinsRegular;
+  src: url(font/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(background.jpg);
+  background-size: cover;
+}
+.calculator-title {
+  margin: 1rem;
+}
+.heading {
+  font-family: poppinsRegular;
+  font-size: 52px;
+  color: #ddd;
+  text-shadow: 2px 2px 8px #181818;
+}
+.main {
+  padding: 20px;
+  background: #181818;
+  vertical-align: middle;
+  text-align: center;
+  width: 30vw;
+  height: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.screen-row input{
+  width: 100%;
+  background: #ddd;
+  border: 0px;
+  color: #222;
+  padding: 10px;
+  text-align: right;
+  font-family: cursedTimer;
+  font-size: 36px;
+}
+.screen {
+  margin-bottom: 1.5rem;
+}
+input[type='button']{
+  padding: 10px 20px;
+  border: none;
+  color: black;
+  text-align: justify;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px 10px;
+  font-family: poppinsRegular;
+}
+.btn-row1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 20px;
+}
+input[type='button']:active{
+  background: #ccc;
+}
