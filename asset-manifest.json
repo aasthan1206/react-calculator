@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/calculator/static/css/main.a990fc28.css",
-    "main.js": "/calculator/static/js/main.71cf0f9e.js",
-    "static/js/787.a174f9e5.chunk.js": "/calculator/static/js/787.a174f9e5.chunk.js",
-    "static/media/background.jpg": "/calculator/static/media/background.b83b7102a68c798bc7b0.jpg",
-    "static/media/Poppins-Regular.ttf": "/calculator/static/media/Poppins-Regular.3c813f59f8b9c1566f24.ttf",
-    "static/media/CursedTimerULiL.ttf": "/calculator/static/media/CursedTimerULiL.da0f8a9407b64807f084.ttf",
-    "index.html": "/calculator/index.html",
-    "main.a990fc28.css.map": "/calculator/static/css/main.a990fc28.css.map",
-    "main.71cf0f9e.js.map": "/calculator/static/js/main.71cf0f9e.js.map",
-    "787.a174f9e5.chunk.js.map": "/calculator/static/js/787.a174f9e5.chunk.js.map"
+    "main.css": "/react-calculator/static/css/main.6783b7ed.css",
+    "main.js": "/react-calculator/static/js/main.b220f5bc.js",
+    "static/js/787.a174f9e5.chunk.js": "/react-calculator/static/js/787.a174f9e5.chunk.js",
+    "static/media/background.jpg": "/react-calculator/static/media/background.b83b7102a68c798bc7b0.jpg",
+    "static/media/Poppins-Regular.ttf": "/react-calculator/static/media/Poppins-Regular.3c813f59f8b9c1566f24.ttf",
+    "static/media/CursedTimerULiL.ttf": "/react-calculator/static/media/CursedTimerULiL.da0f8a9407b64807f084.ttf",
+    "index.html": "/react-calculator/index.html",
+    "main.6783b7ed.css.map": "/react-calculator/static/css/main.6783b7ed.css.map",
+    "main.b220f5bc.js.map": "/react-calculator/static/js/main.b220f5bc.js.map",
+    "787.a174f9e5.chunk.js.map": "/react-calculator/static/js/787.a174f9e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a990fc28.css",
-    "static/js/main.71cf0f9e.js"
+    "static/css/main.6783b7ed.css",
+    "static/js/main.b220f5bc.js"
   ]
 }
