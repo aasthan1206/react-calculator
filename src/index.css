@@ -31,7 +31,7 @@ body {
   vertical-align: middle;
   text-align: center;
   width: 30vw;
-  height: 75vh;
+  height: 80vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,18 +52,25 @@ input[type='button']{
   padding: 10px 20px;
   border: none;
   color: black;
-  text-align: justify;
-  display: inline-block;
+  /* text-align: justify; */
   font-size: 16px;
   border-radius: 5px;
-  margin: 5px 10px;
+  margin: 8px 14px;
   font-family: poppinsRegular;
 }
-.btn-row1 {
+.btns {
   display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+/* .btn-row1 {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 0px 20px;
-}
+} */
 input[type='button']:active{
   background: #ccc;
 }

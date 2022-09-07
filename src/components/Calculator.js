@@ -5,6 +5,10 @@ import { useState } from 'react'
 
 const Calculator = () => {
 
+    const buttons = [
+        '0', '.', '=', '/', '1', '2', '3', '+', '4', '5', '6', '-', '7', '8', '9', '*', 'C', 'Del', '%'
+    ]
+
     const [question, setQuestion] = useState('')
     let [answer, setAnswer] = useState('')
 
@@ -55,7 +59,10 @@ const Calculator = () => {
         <CalculatorTitle value='Calculator' />
         <div className='main'>
             <OutputScreen question={question} answer={answer}/>
-            <div className='button-row btn-row1'>
+            <div className='btns'>
+                {buttons.map((btn)=><Button label={btn} onClick={onClick} />)}
+            </div>
+            {/* <div className='button-row btn-row1'>
                 <Button label={'C'} onClick={onClick} />
                 <Button label={'Del'} onClick={onClick} />
                 <Button label={'%'} onClick={onClick} />
@@ -83,7 +90,7 @@ const Calculator = () => {
                 <Button label={'.'} onClick={onClick} />
                 <Button label={'='} onClick={onClick} />
                 <Button label={'/'} onClick={onClick} />
-            </div>
+            </div> */}
         </div>
       
     </div>
