@@ -1,8 +1,17 @@
-import CalculatorTitle from "./CalculatorTitle"
 import OutputScreen from "./OutputScreen"
-import Button from "./Button"
 import { useState } from 'react'
 
+const Button = (props) => {
+    return (
+      <input
+          type='button'
+          value={props.label}
+          className='btn'
+          onClick={props.onClick}
+      />
+    )
+  }
+  
 const Calculator = () => {
 
     const buttons = [
@@ -42,7 +51,7 @@ const Calculator = () => {
             }
             case 'Del' : {
                 let str = question
-                str = str.substr(0, str.length-1)
+                str = str.substring(0, str.length-1)
                 setQuestion(str)
                 break
             }
@@ -56,43 +65,15 @@ const Calculator = () => {
 
   return (
     <div className='frame'>
-        <CalculatorTitle value='Calculator' />
+        <div className='calculator-title'>
+        <h1 className='heading'>CALCULATOR</h1>  
+    </div>
         <div className='main'>
             <OutputScreen question={question} answer={answer}/>
             <div className='btns'>
                 {buttons.map((btn)=><Button label={btn} onClick={onClick} />)}
             </div>
-            {/* <div className='button-row btn-row1'>
-                <Button label={'C'} onClick={onClick} />
-                <Button label={'Del'} onClick={onClick} />
-                <Button label={'%'} onClick={onClick} />
-            </div>
-            <div className='button-row btn-row2'>
-                <Button label={'7'} onClick={onClick} />
-                <Button label={'8'} onClick={onClick} />
-                <Button label={'9'} onClick={onClick} />
-                <Button label={'*'} onClick={onClick} />
-            </div>
-            <div className='button-row btn-row3'>
-                <Button label={'4'} onClick={onClick} />
-                <Button label={'5'} onClick={onClick} />
-                <Button label={'6'} onClick={onClick} />
-                <Button label={'-'} onClick={onClick} />
-            </div>
-            <div className='button-row btn-row4'>
-                <Button label={'1'} onClick={onClick} />
-                <Button label={'2'} onClick={onClick} />
-                <Button label={'3'} onClick={onClick} />
-                <Button label={'+'} onClick={onClick} />
-            </div>
-            <div className='button-row btn-row5'>
-                <Button label={'0'} onClick={onClick} />
-                <Button label={'.'} onClick={onClick} />
-                <Button label={'='} onClick={onClick} />
-                <Button label={'/'} onClick={onClick} />
-            </div> */}
         </div>
-      
     </div>
   )
 }

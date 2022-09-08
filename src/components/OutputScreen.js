@@ -1,10 +1,18 @@
-import OutputScreenRow from './OutputScreenRow.js'
-
-const OutputScreen = (props) => {
+const OutputScreen = ({question, answer}) => {
   return (
     <div className='screen'>
-        <OutputScreenRow value = {props.question} />
-        <OutputScreenRow value = {props.answer} />
+        <div className='screen-row'>
+          <input 
+            type='text' readOnly 
+            value={question} 
+          />  
+        </div>
+        <div className='screen-row'>
+          <input 
+            type='text' readOnly 
+            value={answer} 
+          />  
+        </div>
     </div>
   )
 }
