@@ -1,13 +1,13 @@
 import OutputScreen from "./OutputScreen"
 import { useState } from 'react'
 
-const Button = (props) => {
+const Button = (label, onClick) => {
     return (
       <input
           type='button'
-          value={props.label}
+          value={label}
           className='btn'
-          onClick={props.onClick}
+          onClick={onClick}
       />
     )
   }
